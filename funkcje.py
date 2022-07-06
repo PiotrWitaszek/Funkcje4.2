@@ -1,13 +1,15 @@
 def is_palindrome(s):
     rev = ''.join(reversed(s))
-    if s == rev:
-        return True
-if __name__ == "__main__":
-  pass  
-s = "potop"
-ans = is_palindrome(s)
+    return s == s[::-1]
 
-if (ans):
+
+if __name__ == "__main__":
+  s = "potop"
+  ans = is_palindrome(s)
+
+  if ans:
     print("Yes")
-else:
+  else:
     print("No")
+  pass
+
